@@ -2,7 +2,7 @@
 session_start();
     require('conexao.php');
     if (empty($_POST['nome']) || empty($_POST['senha'])){
-        header('location: index.php');
+        header('location: index.html');
         exit();
     }
 
