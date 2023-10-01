@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Cadastro</title>
 </head>
 <body>
     <div id="form" > 
@@ -11,15 +12,15 @@
         NOME:<br>
         <input type="text" placeholder="insira seu usuário" name="nome"><br>
         TIPO DE USUARIO:<br>
-        <input type="checkbox" name="tipo" id="ong" valor="ong">
-        <label for="ong" id="ong">ONG</label><br>
-        <input type="checkbox" name="tipo" id="voluntario" valor="voluntario">
-        <label for="voluntario" id="voluntario">VOLUNTARIO</label><br>
-        <input type="checkbox" name="tipo" id="necessitado" valor="necessitado">
-        <label for="necessitado" id="necessitado">NECESSITADO</label><br>
+        <select name="tipo" required>
+            <option value=""> Selecione o tipo </option>
+            <option value="ong"> ONG </option>
+            <option value="voluntario"> VOLUNTARIO </option>
+            <option value="necessitado"> NECESSITADO </option>
+        </select><br>
         SENHA:<br>
         <input type="password" placeholder="insira sua senha" name="senha"><br>
-        <br><input type="submit" name="enviar" value="CADASTRAR" id="button">
+        <br><input type="submit" name="enviar" value="CADASTRAR" id="button"> 
       </div>
 </body>
 </html>
