@@ -1,4 +1,7 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Diplomata&family=Zen+Antique+Soft&display=swap');
+
 body {
 	background: linear-gradient(-45deg, #e9ff79, #f688b2, #a9dbed, #ae53df);
 	background-size: 400% 400%;
@@ -31,11 +34,14 @@ body {
   display: flex;
   align-items: center;
   justify-self: space-between;
+  margin-left: -167px;
 }
 
 header{
   width:100%;
   padding: 60px 4%;
+  padding-top: 40px;
+
 }
 
 header ul{
@@ -48,12 +54,12 @@ header ul li{
 }
 
 header ul li a{
-  color:bisque; 
+  color:white; 
   text-decoration: none;
 }
 
 .btv_cadastro a{
-  color:bisque; 
+  color:white; 
   text-decoration: none;
 }
 
@@ -65,7 +71,7 @@ header ul li a{
     transform: translate(-50%, -50%);
     width: 1000px;
     height: 100px;
-    color:bisque;
+    color:white;
     animation: move 2s ease-in-out infinite;
 }
 
@@ -102,6 +108,7 @@ header ul li a{
   height: 832px;
   position: relative;
   overflow: hidden;
+  top: -114px;
 }
 .ellipse-3 {
   background: rgba(88, 245, 169, 0.46);
@@ -109,7 +116,7 @@ header ul li a{
   width: 112px;
   height: 112px;
   position: absolute;
-  left: 109px;
+  left: 184px;
   top: 90px;
   animation: gradient 2s ease infinite;
 }
@@ -126,36 +133,36 @@ header ul li a{
 }
 .star-1 {
   position: absolute;
-  left: 456.2px;
-  top: 28px;
+  left: 564.2px;
+  top: 4px;
   transform: translate(-41.33px, 37.39px);
   overflow: visible;
 }
 .star-2 {
   position: absolute;
-  left: 927.2px;
-  top: 552px;
+  left: 953px;
+  top: 467px;
   transform: translate(-41.33px, 37.39px);
   overflow: visible;
 }
 .star-3 {
   position: absolute;
-  left: 141.2px;
-  top: 430px;
+  left: 175.2px;
+  top: 463px;
   transform: translate(-44.95px, 26.7px);
   overflow: visible;
 }
 .star-4 {
   position: absolute;
-  left: 1237.2px;
-  top: 262px;
+  left: 1179.2px;
+    top: 238px;
   transform: translate(-44.95px, 26.7px);
   overflow: visible;
 }
 
 .polygon-1 {
   position: absolute;
-  left: 108px;
+  left: 53px;
   top: 272px;
   transform: translate(-108px, 12.88px);
   overflow: visible;
@@ -166,8 +173,8 @@ header ul li a{
   width: 112px;
   height: 112px;
   position: absolute;
-  left: 1325px;
-  top: 127px;
+  left: 933px;
+  top: 89px;
 }
 .ellipse-2 {
   background: rgba(88, 245, 169, 0.46);
@@ -175,10 +182,25 @@ header ul li a{
   width: 112px;
   height: 112px;
   position: absolute;
-  left: 465px;
-  top: 558px;
+  left: 565px;
+  top: 532px;
 }
-
+.btndrc{
+  color: rgb(77, 75, 75);
+  background-color: pink;
+  padding: 20px;
+  border-top-left-radius:20px ;
+  border-bottom-right-radius: 20px;
+  top: 200px;
+  font-family: 'Zen Antique Soft', serif;
+}
+.btndrc:hover{
+  background-color: rgb(255, 67, 98);
+  color: white;
+}
+.btns{
+  margin-top: 100px;
+}
 .ncididunt-ut-labore-et-dolore-magna-aliqua-ut-enim-ad-minim-veniam-quis-nostrud-exercitation-ullamco-laboris-nisi-ut-aliquip-ex-ea-commodo-consequat-duis-aute-irure-dolor-in-reprehenderit-in-voluptate-velit-esse-cillum-dolore-eu-fugiat-nulla-pariatur-excepteur-sint-occaecat-cupidatat-non-proident-sunt-in-culpa-qui-officia-deserunt-mollit-anim-id-est-laborum {
   color: #000000;
   text-align: left;
@@ -193,11 +215,12 @@ header ul li a{
   transform: rotate(0deg) scale(1, 1);
 }
 .opcoes{
-    margin-left: 15%;
+    margin-left: 6%;
     margin-top: 200px;
     display: flex;
 }
 .doadores{
+  font-family: 'PT Serif', serif;
     color: white;
     padding: 20px;
     background-color: rgb(219, 102, 219);
@@ -217,6 +240,8 @@ button{
     margin-top: 150px !important;
 }
 .receber{
+  font-family: 'PT Serif', serif;
+
     color: white;
     padding: 20px;
     background-color:   rgb(81, 61, 232);
@@ -228,6 +253,8 @@ button{
 
 }
 .ongs{
+  font-family: 'PT Serif', serif;
+
     color: white;
     padding: 20px;
     background-color: rgb(63, 224, 108);
@@ -237,3 +264,44 @@ button{
     margin: 10px;
     text-align: center;
 }
+ /* INICIAL */
+
+ .btv_login{
+margin-left: 20px;  
+}
+  a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+  }
+  .usuarios{
+    margin-left: 200px;
+    width: 200px;
+    display: flex;
+    margin-top: 8px;
+  }
+  .btv_usuarios{
+    font-size: 15px;
+    font-family: 'Diplomata', cursive;
+  }
+  
+  .btv_usuarios:hover{
+    color: rgb(75, 75, 219);
+  }
+  .opc{
+    font-size: 20px;
+    margin-right: 174px;
+    font-family: 'Zen Antique Soft', serif;
+  }
+  .opcTex:hover{
+    color: rgb(219, 75, 130);
+
+  }
+  .textApre{
+    font-family: 'PT Serif', serif;
+    color: #5c5454;
+    background-color: rgba(255, 255, 255, 0.356);
+    padding: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius:20px ;
+  }
