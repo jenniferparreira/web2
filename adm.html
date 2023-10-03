@@ -7,6 +7,35 @@
     <title>Document</title>
 </head>
 <body>
-    <p> voce é adm</p>
+    <h1> Cadastar </h1>
+
+  <form name="Inserir" method="POST" action="adm.php" >
+  ID:<br>
+  <input type="text" name="id"><br>
+  Nome:<br>
+  <input type="text" name="nome"><br>
+  TIPO:<br>
+  <input type="text" name="tipo"><br>
+  SENHA:<br>
+  <input typt= "text" name="senha"><br>
+  <button onclick="execute($query)"> Cadastrar </button>
+  </form>
+
+  <h1> Deletar </h1>
+  
+  <form name="deletar" method="POST" action="adm.php" >
+  Insira o ID do usuário que será deletado:<br>
+  <input type="text" name="id2"><br>
+  <button onclick="execute()"> Deletar </button> 
+  </form>
+  
+  <h1> Consultar </h1>
+
+  <form name="consultar" method="POST" action="adm.php" >
+  Insira o ID do aluno que deseja ser pesquisado:<br>
+  <input type="text" name="id3"><br>
+  <button onclick="execute($queryC)"> Consultar </button> 
+  </form>
+
 </body>
 </html>
