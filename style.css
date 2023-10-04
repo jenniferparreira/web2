@@ -1,7 +1,9 @@
 
   @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Diplomata&family=Zen+Antique+Soft&display=swap');
-
+  @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&display=swap');
 body {
 	background: linear-gradient(-45deg, #e9ff79, #f688b2, #a9dbed, #ae53df);
 	background-size: 400% 400%;
@@ -38,9 +40,12 @@ body {
 }
 
 header{
-  width:100%;
-  padding: 60px 4%;
-  padding-top: 40px;
+  width:92%;
+  padding: 10px 4%;
+  padding-top: 10px;
+  background-color: purple;
+    border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 
 }
 
@@ -69,7 +74,7 @@ header ul li a{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1000px;
+    width: 570px;
     height: 100px;
     color:white;
     animation: move 2s ease-in-out infinite;
@@ -216,7 +221,7 @@ header ul li a{
 }
 .opcoes{
     margin-left: 6%;
-    margin-top: 200px;
+    margin-top: 70px;
     display: flex;
 }
 .doadores{
@@ -300,8 +305,79 @@ margin-left: 20px;
   .textApre{
     font-family: 'PT Serif', serif;
     color: #5c5454;
+    margin: 0;
+    font-size: 22px;
     background-color: rgba(255, 255, 255, 0.356);
     padding: 20px;
     border-bottom-right-radius: 20px;
     border-top-left-radius:20px ;
   }
+
+
+#form{
+  background-color: #ae53df70;
+  width: 300px;
+  height: 400px;
+  margin-left: 460px;
+  margin-top: 8px;
+  padding: 50px;
+  border: #ae53df70 2px solid;
+  border-radius: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+form{
+  margin-left: 40px;
+  font-size: 20px;
+}
+#button{
+  background-color: #ae53df70;
+  border: rgba(128, 0, 128, 0.507) 2px solid;
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: -3px;
+  display: block;
+}
+#button:hover{
+  background-color: rgb(255, 67, 98);
+}
+input{
+  background-color: white;
+  
+}
+h3{
+  margin-top: -20px;
+  font-family: 'Young Serif', serif;
+  font-size: 25px;
+}
+#nome{
+  border: rgb(132, 0, 184) 2px solid;
+  border-radius: 10px;
+  height: 30px;
+  background-color:#ae53df70;
+  color:white;
+  font-size: 12px;
+  font-family: 'Martian Mono', monospace;
+}
+input::placeholder{
+  color: rgb(0, 0, 0);
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+.cheks{
+  border: rgb(132, 0, 184) 2px solid;
+  border-radius: 10px;
+  height: 30px;
+  background-color:#ae53df70;
+  padding-top: 5px;
+  padding: -2px;
+  width: 190px;
+  margin-bottom: 5px;
+  font-family: 'Martian Mono', monospace;  font-size: 12px;
+}
+
+

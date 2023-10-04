@@ -3,26 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
-    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
+    <header id = "header">
+        <div class = "container_head">  
+            
+            <div class="flex">
+                <a href="escolha.html"><img src = "heart_minus_FILL0_wght400_GRAD0_opsz24.png" alt="logo"/></a>
+                <nav class="opc">
+                    <ul>
+                        <li><a href="#" class="opcTex">Ongs</a></li>
+                        <li><a href="#" class="opcTex">Doações</a></li>
+                        <li><a href="#" class="opcTex">Depoimentos</a></li>
+                    </ul>
+                </nav>
+                <div class="usuarios">
+                <div class="btv_cadastro">
+                    <a href="escolha.html" class="btv_usuarios"><btn>Cadastro</btn></a>
+                </div>
+                <div class="btv_login">
+                    <a href="login.html" class="btv_usuarios"><btn>Login</btn></a>
+                </div>
+            </div> 
+        </div>
+    </div>
+    </header>
     <div id="form" > 
+        <h3>Crie sua conta</h3>
         <form name="cadastro" method="POST" action="cadastro.php" >
-        NOME:<br>
-        <input type="text" placeholder="insira seu usuário" name="nome"><br>
-        TIPO DE USUARIO:<br>
-        <select name="tipo" required>
-            <option value=""> Selecione o tipo </option>
-            <option value="ong"> ONG </option>
-            <option value="voluntario"> VOLUNTARIO </option>
-            <option value="necessitado"> NECESSITADO </option>
-        </select><br>
-        SENHA:<br>
-        <div class=" botãoCd">
-        <input type="password" placeholder="insira sua senha" name="senha"><br>
-        <br><input type="submit" name="enviar" value="CADASTRAR" id="button"> 
+        <p class="texto">Usuario:</p>
+        <input type="text" placeholder="Insira seu usuário" name="nome" id="nome"><br><br>
+        <p class="texto">Tipo de usuario:</p>
+        <div class="cheks">
+        <input type="radio" name="tipo" id="ong" valor="ong">
+        <label for="ong" id="ong">ONG</label><br>
+        </div>
+        <div class="cheks">
+        <input type="radio" name="tipo" id="voluntario" valor="voluntario">
+        <label for="voluntario" id="voluntario">VOLUNTARIO</label><br>
+        </div>
+        <div class="cheks">
+        <input type="radio" name="tipo" id="necessitado" valor="necessitado">
+        <label for="necessitado" id="necessitado">NECESSITADO</label><br><br>
+        </div>
+        <p class="texto">Senha:</p>
+        <input type="password" placeholder="Insira sua senha"  name="senha"  id="nome"> <br>
+        <div class="cadastro">
+        <br><input type="submit" name="enviar" value="CADASTRAR" id="button">
       </div>
     </div>
 </body>
-</html>
+</html>  
