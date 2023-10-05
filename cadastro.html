@@ -11,7 +11,7 @@
         <div class = "container_head">  
             
             <div class="flex">
-                <a href="index.html"><img src = "logo.png" alt="logo"/ width="80px"></a>
+                <a href="index.html"><img src = "logo.png" alt="logo" width="80px"></a>
                 <nav class="opc">
                     <ul>
                         <li><a href="#" class="opcTex">Ongs</a></li>
@@ -41,12 +41,12 @@
         <label for="ong" id="ong">ONG</label><br>
         </div>
         <div class="cheks">
-        <input type="radio" name="tipo" id="voluntario" valor="voluntario">
-        <label for="voluntario" id="voluntario">VOLUNTARIO</label><br>
-        </div>
-        <div class="cheks">
-        <input type="radio" name="tipo" id="necessitado" valor="necessitado">
-        <label for="necessitado" id="necessitado">NECESSITADO</label><br><br>
+            <select name="tipo" required>
+                <option value=""> Selecione o tipo </option>
+                <option value="ong"> ONG </option>
+                <option value="voluntario"> VOLUNTARIO </option>
+                <option value="necessitado"> NECESSITADO </option>
+            </select><br>
         </div>
         <p class="texto">Senha:</p>
         <input type="password" placeholder="Insira sua senha"  name="senha"  id="nome"> <br>
