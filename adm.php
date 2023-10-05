@@ -1,12 +1,16 @@
 <?php 
 require('conexao.php');
 
-$id= ($_POST['id']);
+error_reporting(0);
+
 $nome = ($_POST['nome']);
+$nome2 = ($_POST['nome2']);
 $tipo = ($_POST['tipo']);
 $senha= ($_POST['senha']);
 $id2 = ($_POST['id2']);
 $id3 = ($_POST['id3']);
+
+error_reporting(E_ALL ^ E_NOTICE);
 
 $query = $conexao -> prepare ("INSERT INTO cadastro (nome,tipo,senha) VALUES ('$nome', '$tipo', '$senha')");
 $query -> execute();
@@ -25,7 +29,7 @@ echo "<tr>";
 echo "<th> SENHA </th>";
 echo "<tr>";
 
-$queryC = "SELECT*FROM cadastro WHERE id = '$id3'";
+$queryC = "SELECT*FROM cadastro WHERE id = '$id3' OR nome = '$nome2'";
 $resultado = mysqli_query($conexao,$queryC) or die ("Erro ao conectar com o banco de dados");
 
 while ($row = mysqli_fetch_array($resultado)){
@@ -49,4 +53,3 @@ while ($row = mysqli_fetch_array($resultado)){
 mysqli_close($conexao);
 echo"</table>";
 ?>
-

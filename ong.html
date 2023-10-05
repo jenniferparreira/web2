@@ -7,6 +7,35 @@
     <title>Document</title>
 </head>
 <body>
-    <p> voce é uma ong</p>   
+    <h1>NECESSITADOS</h1>
+    <h2> Se precisa desses elememtos selecione as opções</h2>
+
+    <form name="ajuda" method="POST" action="ong.php" >
+        <input type="checkbox" name="roupas" id="1" value="roupas">
+        <label for="roupas" id="roupas">ROUPAS</label><br>
+        <input type="checkbox" name="higiene" id="1" value="higiene">
+        <label for="higiene" id="higiene">HIGIENE</label><br>
+        <input type="checkbox" name="alimentos" id="1" value="alimentos">
+        <label for="alimentos" id="alimentos">ALIMENTOS</label><br>
+        <input type="checkbox" name="brinquedos" id="1" value="brinquedos" >
+        <label for="brinquedos" id="brinquedos">BRINQUEDOS</label><br>
+        <button onclick="execute($query)"> ATUALIZAR </button>
+    </form>
+
+    <h1>NÃO NECESSITADOS</h1>
+    <h2> caso não pecise mais desses elememtos selecione as opções</h2>
+
+    <form name= "nao_ajuda" method="POST" action="ong.php" >
+        <input type="checkbox" name="roupas2" id="2" value="roupas">
+        <label for="roupas" id="roupas">ROUPAS</label><br>
+        <input type="checkbox" name="higiene2" id="2" value="higiene">
+        <label for="higiene" id="higiene">HIGIENE</label><br>
+        <input type="checkbox" name="alimentos2" id="2" value="alimentos">
+        <label for="alimentos" id="alimentos">ALIMENTOS</label><br>
+        <input type="checkbox" name="brinquedos2" id="2" value="brinquedos" >
+        <label for="brinquedos" id="brinquedos">BRINQUEDOS</label><br>
+        <button onclick="execute($query2)"> ATUALIZAR </button>
+    </form>
+
 </body>
 </html>
