@@ -7,35 +7,75 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Cadastar </h1>
+  <header id = "header">
+    <div class = "container_head">  
+        
+        <div class="flex">
+            <a href="index.html"><img src = "logo.png" alt="logo"/ width="80px"></a>
+            <nav class="opc">
+                <ul>
+                    <li><a href="#" class="opcTex">Ongs</a></li>
+                    <li><a href="#" class="opcTex">Doações</a></li>
+                    <li><a href="#" class="opcTex">Depoimentos</a></li>
+                </ul>
+            </nav>
+            <div class="usuarios">
+            <div class="btv_cadastro">
+                <a href="escolha.html" class="btv_usuarios"><btn>Cadastro</btn></a>
+            </div>
+            <div class="btv_login">
+                <a href="login.html" class="btv_usuarios"><btn>Login</btn></a>
+            </div>
+        </div> 
+    </div>
+</div>
+</header>
+   <container class="boxopc">
+    <div class="cadastrarbox">
+    <h1 class="titulos"> Cadastrar </h1>
 
-  <form name="Inserir" method="POST" action="adm.php" >
-  ID:<br>
-  <input type="text" name="id"><br>
-  Nome:<br>
-  <input type="text" name="nome"><br>
-  TIPO:<br>
-  <input type="text" name="tipo"><br>
-  SENHA:<br>
-  <input typt= "text" name="senha"><br>
-  <button onclick="execute($query)"> Cadastrar </button>
+  <form name="Inserir" method="POST" action="adm.php" class="formadm">
+    <div class="boxflex">
+ <p class="textobox">ID:</p> 
+ <input type="text" name="id" class="inputadm"><br>
+</div><br>
+<div class="boxflex">
+  <p class="textobox" >Nome:<br></p>
+  <input type="text" name="nome"class="inputadm"><br>
+</div><br>
+<div class="boxflex">
+  <p class="textobox">TIPO:<br></p>
+  <input type="text" name="tipo" class="inputadm"><br>
+</div><br>
+<div class="boxflex">
+  <p class="textobox">SENHA:</p>
+ <input typt= "text" name="senha" class="inputadm"><br>
+</div><br>
+  <button onclick="execute($query)" class="btmadm0"> Cadastrar </button>
   </form>
-
-  <h1> Deletar </h1>
+</div>
+   <div class="deletarbox">
+  <h1 class="titulos"> Deletar </h1>
   
   <form name="deletar" method="POST" action="adm.php" >
-  Insira o ID do usuário que será deletado:<br>
-  <input type="text" name="id2"><br>
-  <button onclick="execute()"> Deletar </button> 
+    <div class="boxflex">
+   <p class="textobox"> Insira o ID do usuário que será deletado:<br></p>
+  <input type="text" name="id2" class="inputadm"><br>
+    </div>
+  <button onclick="execute()" class="btmadm2"> Deletar </button> 
   </form>
-  
-  <h1> Consultar </h1>
+</div>
+<div class="consultarbox">
+  <h1 class="titulos"> Consultar </h1>
 
   <form name="consultar" method="POST" action="adm.php" >
-  Insira o ID do aluno que deseja ser pesquisado:<br>
-  <input type="text" name="id3"><br>
-  <button onclick="execute($queryC)"> Consultar </button> 
+    <div class="boxflex">
+    <p class="textobox">Insira o ID do aluno que deseja ser pesquisado:<br></p>
+  <input type="text" name="id3" class="inputadm"><br>
+</div>
+  <button onclick="execute($queryC)" class="btmadm1"> Consultar </button> 
   </form>
-
+</div>
+</container>
 </body>
 </html>

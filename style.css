@@ -36,7 +36,7 @@ body {
   display: flex;
   align-items: center;
   justify-self: space-between;
-  margin-left: -167px;
+  margin-left: -123px;
 }
 
 header{
@@ -136,60 +136,7 @@ header ul li a{
     background-position:100%;
   }
 }
-.star-1 {
-  position: absolute;
-  left: 564.2px;
-  top: 4px;
-  transform: translate(-41.33px, 37.39px);
-  overflow: visible;
-}
-.star-2 {
-  position: absolute;
-  left: 953px;
-  top: 467px;
-  transform: translate(-41.33px, 37.39px);
-  overflow: visible;
-}
-.star-3 {
-  position: absolute;
-  left: 175.2px;
-  top: 463px;
-  transform: translate(-44.95px, 26.7px);
-  overflow: visible;
-}
-.star-4 {
-  position: absolute;
-  left: 1179.2px;
-    top: 238px;
-  transform: translate(-44.95px, 26.7px);
-  overflow: visible;
-}
 
-.polygon-1 {
-  position: absolute;
-  left: 53px;
-  top: 272px;
-  transform: translate(-108px, 12.88px);
-  overflow: visible;
-}
-.ellipse-1 {
-  background: rgba(88, 245, 169, 0.46);
-  border-radius: 50%;
-  width: 112px;
-  height: 112px;
-  position: absolute;
-  left: 933px;
-  top: 89px;
-}
-.ellipse-2 {
-  background: rgba(88, 245, 169, 0.46);
-  border-radius: 50%;
-  width: 112px;
-  height: 112px;
-  position: absolute;
-  left: 565px;
-  top: 532px;
-}
 .btndrc{
   color: rgb(77, 75, 75);
   background-color: pink;
@@ -270,7 +217,27 @@ button{
     text-align: center;
 }
  /* INICIAL */
-
+.valores{
+  margin-top: 500px;
+}
+.blocos{
+  display: flex;
+}
+.bloco01,.bloco02,.bloco03{
+  background-color: #81cbe6;
+  padding: 10px;
+  margin: 10px;
+  padding-bottom: 50px;
+  width: 400px;
+  border-radius: 20px;
+}
+.valores00{
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'PT Serif', serif;
+  background-color: rgb(169, 255, 236);
+  padding: 20px;
+}
  .btv_login{
 margin-left: 20px;  
 }
@@ -295,7 +262,7 @@ margin-left: 20px;
   }
   .opc{
     font-size: 20px;
-    margin-right: 174px;
+    margin-right: 88px;
     font-family: 'Zen Antique Soft', serif;
   }
   .opcTex:hover{
@@ -356,6 +323,7 @@ h3{
   border: rgb(132, 0, 184) 2px solid;
   border-radius: 10px;
   height: 30px;
+  width: 183px;
   background-color:#ae53df70;
   color:white;
   font-size: 12px;
@@ -381,3 +349,57 @@ p{
 }
 
 
+/* PAGINA ADM */
+.boxopc{
+  margin-left:50px;
+}
+.titulos{
+  font-size: 20px;
+  font-family: 'Zen Antique Soft', serif;
+}
+.cadastrarbox, .deletarbox, .consultarbox{
+  padding: 5px;
+  margin: 5px;
+  border-bottom: 1px blue solid;
+  width: auto;
+  border-radius:20px;
+}
+.textobox{
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btmadm0{
+  background-color: rgb(224, 101, 127);
+   margin-top: 22px !important;
+   margin-bottom: 30px;
+   width: 200px;
+   font-family: 'Zen Antique Soft', serif;
+   font-size: 15px;
+   border-color: rgb(235, 46, 77);
+}
+.inputadm{
+  margin-left: 9px;
+  justify-content: flex-end;
+  flex-direction: row;
+  border: rgb(132, 0, 184) 2px solid;
+  height: 30px;
+  width: 183px;
+  background-color:#ae53df70;
+  color:white;
+  font-size: 12px;
+  font-family: 'Martian Mono', monospace;
+}
+.btmadm1,.btmadm2{
+  background-color: rgb(224, 101, 127);
+  margin-top: 34px !important;
+  width: 200px;
+  font-family: 'Zen Antique Soft', serif;
+  font-size: 15px;
+  border-color: rgb(235, 46, 77);
+}
+.boxflex{
+  display: flex;
+  margin-right: 973px;
+  justify-content: flex-end;
+  flex-direction: row;
+}
